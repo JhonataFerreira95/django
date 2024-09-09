@@ -1,0 +1,48 @@
+:root{
+    --primary-color:#7ed957;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--primary-color);
+    font-family: 'Open sans', sans-serif;
+    font-size: 1.3em;
+    line-height: 1.5em;
+    background-image: url(/static/assets/dinero.gif);
+    font-family: "Shrikhand", serif;
+}
+
+.box{
+    max-width: 640px;
+    margin: 100px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #333;
+    text-align: center;
+}
+
+.box h2{
+    color: #f4fff7;
+    letter-spacing: 0.1rem;
+}
+
+.box h2 span {
+    color: rgb(255, 166, 64);
+    letter-spacing: 0.1rem;
+}
+
+.box h3{
+    color: #f4fff7;
+    letter-spacing: 0.1rem;
+}
+
+.box h3 span {
+    color: rgb(255, 166, 64);
+    letter-spacing: 0.1rem;
+}
+
+p{
+    color: #f4fff7;
+}

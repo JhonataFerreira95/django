@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fortune Monkey</title>
+</head>
+<body>
+    <div class="box">
+        <form action="{% url 'sorteio' %}" method="POST">
+            {% csrf_token %}
+            <h2>Bem-vindo(a) à casa <span>lotérica mais famosa do Brasil</span>, aqui entregamos infelicidades e
+                frustrações desde 2024</h2>
+            <h3>Acerte ao menos <span>6 números para ganhar</span> respectivamente os valores de: 10.000💸, 50.000💸,
+                100.000💸, 150.000💸, 350.000💸</h3>
+            <p>Digite 10 números únicos de 1 a 60</p>
+            <p>Não digite um número repetido</p>
+
+            {% for i in range(10) %}
+            <input type="number" name="numeros" min="1" max="60" required>
+            <br>
+            {% endfor %}
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
